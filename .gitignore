@@ -1,0 +1,45 @@
+# Cache files #
+###############
+*.pyc
+*.pyo
+.Rhistory
+.RData
+*.idea/
+.Rhistory
+.RData
+www/media/CACHE/
+# Virtualenv files #
+####################
+bin/*
+lib/*
+include/*
+docs/*
+src/*
+build/*
+share/*
+man/*
+node_modules/*
+local
+.metadata/*
+# OS generated files #
+######################
+.DS_Store?
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+.Python
+.RData
+.Rhistory
+*.*~
+*~
+# Jekyll specific files #
+##########################
+_site/
+.jekyll-metadata
+
+# Sass cache
+/**/.sass-cache/
+
+# Various
+dump.rdb
