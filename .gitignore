@@ -21,6 +21,7 @@ man/*
 node_modules/*
 local
 .metadata/*
+.idea
 # OS generated files #
 ######################
 .DS_Store?
