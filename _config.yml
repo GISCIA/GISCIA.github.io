@@ -1,0 +1,23 @@
+highlighter: pygments
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "base"
+      author: "R.A. Cardenas"
+  -
+    scope:
+      path: "blog"
+      type: "posts"
+    values:
+      layout: "base"
+exclude:
+- config.rb
+- Gemfile
+- Gemfile.lock
+- gems
+- Procfile
+- Rakefile
+- README.md
