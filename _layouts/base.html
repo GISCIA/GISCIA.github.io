@@ -8,7 +8,7 @@
     <meta name="description" content="research group in AI and control systems">
     <meta name="author" content="">
 
-    <title>Research Group in Control Systems and Artificial Intelligence</title>
+    <title>Artificial Intelligence &amp; Control Systems Research Group</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +19,7 @@
 
     <!-- Custom Fonts -->
     <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,15 +46,19 @@
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
+
+            <div class="navbar-header" style="max-width: 400px;padding:6px 0">
+                <div class="brand-header"> <a  href="{{ site.url }}/">GISCIA</a> </div>
+                <div style="color:#E8E8E8">Artificial Intelligence &amp; Control Systems Research Group</div>
+
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ site.url }}/">GISCIA</a>
             </div>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -83,31 +88,17 @@
     </nav>
 
     {{ content }}
-    <hr>
-    <div class="container">
+    <div style="text-align: center">
     <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
                     <p>&copy;GISCIA is part of the <a href="http://www.fim.uni.edu.pe/">Mechanics Department</a> at <a href="http://www.uni.edu.pe/">Universidad Nacional de Ingenieria</a> - Lima, Peru.</p>
-                    <p>Follow us:<a href="https://www.facebook.com/GISCIA" class="fa solo fa-facebook"></a> </p>
+                    <p><a href="{{site.url}}/contact/">Contact us</a>. <a href="https://www.facebook.com/GISCIA" class="fa solo fa-facebook"></a> </p>
                 </div>
             </div>
         </footer>
     </div>
-
-    <!-- jQuery -->
-    <script src="/js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/js/bootstrap.min.js"></script>
-
-    <!-- Script to Activate the Carousel -->
-    <script>
-    $('.carousel').carousel({
-        interval: 5000 //changes the speed
-    })
-    </script>
 
 </body>
 
