@@ -6,7 +6,7 @@ defaults:
       type: "pages"
     values:
       layout: "base"
-      author: "R.A. Cardenas"
+      author: "GISCIA"
   -
     scope:
       path: "blog"
