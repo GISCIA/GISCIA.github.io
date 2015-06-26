@@ -117,3 +117,18 @@ footer {
 .navbar-fixed-top {
     border-width: 0;
 }
+
+.breadcrumb{
+    margin-top:40px;
+}
+
+.circular {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
