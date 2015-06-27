@@ -1,0 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+
+.giscia-nav{
+	background-color: #34495E;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+	color: #E2E2E2;
+}
+
+.brand-header a{
+	color: #E58836;
+
+}
+.brand-header a:hover{
+	color: #E58836;
+}
+
+.font-giscia{
+	font-weight: bold;
+  	font-size: 20px;
+}
+
+.container-giscia{
+	//margin-left: 50px;
+	//margin-right: 50px;
+	width: 75%;
+	margin: auto;
+}
+
+footer{
+	background-color: #34495E;
+}
+footer>a{
+	color: #FAC471;
+}
+footer>a:hover{
+	color: #FAC471;
+	text-decoration: none;
+}

@@ -1,4 +1,6 @@
 highlighter: pygments
+categories: [project, post]
+excerpt_separator: <!--more-->
 defaults:
   -
     scope:
