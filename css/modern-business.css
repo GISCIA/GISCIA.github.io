@@ -132,3 +132,18 @@ footer {
 	margin: 0 auto;
 	margin-bottom: 30px;
 }
+.position{
+    color:rgb(255,48,0);
+}
+
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
+.current-org a{
+    text-decoration: none;
+    color: black;
+}
+.current-org a:hover{
+    color: dodgerblue;
+}

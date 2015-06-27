@@ -8,7 +8,7 @@
     <meta name="description" content="research group in AI and control systems">
     <meta name="author" content="">
 
-    <title>GISCIA | {{ page.title }}</title>
+    <title>{{ page.title }} - GISCIA</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -20,6 +20,10 @@
     <!-- Custom Fonts -->
     <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+    <!-- CSV to Table -->
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/jquery.csvToTable.js"></script>
+	<script type="text/javascript" src="/js/jquery.tablesorter.min.js"></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -88,17 +92,16 @@
     </nav>
 
     {{ content }}
-    <div style="text-align: center">
+
+
     <!-- Footer -->
+    <div style="text-align: center">
         <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>&copy;GISCIA is part of the <a href="http://www.fim.uni.edu.pe/">Mechanics Department</a> at <a href="http://www.uni.edu.pe/">Universidad Nacional de Ingenieria</a> - Lima, Peru.</p>
-                    <p><a href="{{site.url}}/contact/">Contact us</a>. <a href="https://www.facebook.com/GISCIA" class="fa solo fa-facebook"></a> </p>
-                </div>
-            </div>
+            &copy;GISCIA is part of the <a href="http://www.fim.uni.edu.pe/">Mechanical Engineering Department</a> at <a href="http://www.uni.edu.pe/">Universidad Nacional de Ingenieria</a> - Lima, Peru.<br>
+            <a href="{{site.url}}/contact/">Contact us</a>.
         </footer>
     </div>
+
 
 </body>
 
