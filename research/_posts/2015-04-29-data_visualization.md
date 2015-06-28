@@ -11,4 +11,4 @@ Se implementó un visualizador de la demanda laboral peruana entre los meses de 
 
 <!--more-->
 
-[Prototipo](www.empleatron.com/peru/panorama/)
+[Panorama del mercado](http://www.empleatron.com/peru/panorama/)
