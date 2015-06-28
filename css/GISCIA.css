@@ -32,9 +32,22 @@ footer{
 	background-color: #34495E;
 }
 footer>a{
-	color: #FAC471;
+	color: #E58836;
 }
 footer>a:hover{
-	color: #FAC471;
+	color: #E58836;
 	text-decoration: none;
+}
+
+a{
+	color: #E58836;
+}
+a:hover{
+	color: #EA6E00;
+}
+
+.area-title{
+	color: #2980B9;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 5px;
 }

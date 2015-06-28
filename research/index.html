@@ -1,29 +1,39 @@
 ---
 layout: base
+title: Research
 ---
 
     <!-- Page Content -->
-    <div class="container-giscia">
+    <div class="container-giscia" >
 
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-md-12">
                 <h1 class="page-header">Research</h1>
             </div>
-		    <nav class="col-md-3 hidden-sm bs-docs-sidebar">
+        </div>
+
+        <div class="row">
+		    <nav class="col-md-3 hidden-sm hidden-xs bs-docs-sidebar">
 		        <ul id="sidebar" class="nav nav-stacked fixed">
 		            <li>
 		                <a href="#CV">Computer Vision</a>
 		                <ul class="nav nav-stacked">
-		                    <li><a href="#GroupASub1">Sub-Group 1</a></li>
-		                    <li><a href="#GroupASub2">Sub-Group 2</a></li>
+		                    {% for post in site.posts %}
+		                    	{% if post.area == 'CV' %}
+		                    		<li><a href="#CV-{{ post.reflink }}">{{ post.title }}</a></li>		
+		                    	{% endif %}
+		                    {% endfor %}
 		                </ul>
 		            </li>
 		            <li>
 		                <a href="#NLP">Natural Language Processing</a>
 		                <ul class="nav nav-stacked">
-		                    <li><a href="#GroupBSub1">Sub-Group 1</a></li>
-		                    <li><a href="#GroupBSub2">Sub-Group 2</a></li>
+		                    {% for post in site.posts %}
+		                    	{% if post.area == 'NLP' %}
+		                    		<li><a href="#NLP-{{ post.reflink }}">{{ post.title }}</a></li>		
+		                    	{% endif %}
+		                    {% endfor %}
 		                </ul>
 		            </li>
 		            <li>
@@ -31,7 +41,7 @@ layout: base
 		                <ul class="nav nav-stacked">
 		                    {% for post in site.posts %}
 		                    	{% if post.area == 'ML' %}
-		                    		<li><a href="#{{ post.title }}">{{ post.title }}</a></li>		
+		                    		<li><a href="#ML-{{ post.reflink }}">{{ post.title }}</a></li>		
 		                    	{% endif %}
 		                    {% endfor %}
 		                </ul>
@@ -39,35 +49,117 @@ layout: base
 		            <li>
 		                <a href="#Finance">Finance-Economics</a>
 		                <ul class="nav nav-stacked">
-		                    <li><a href="#GroupCSub1">Sub-Group 1</a></li>
-		                    <li><a href="#GroupCSub2">Sub-Group 2</a></li>
+		                    {% for post in site.posts %}
+		                    	{% if post.area == 'Finance' %}
+		                    		<li><a href="#Finance-{{ post.reflink }}">{{ post.title }}</a></li>		
+		                    	{% endif %}
+		                    {% endfor %}
 		                </ul>
 		            </li>
 		            <li>
 		                <a href="#Robo">Robotics</a>
 		                <ul class="nav nav-stacked">
-		                    <li><a href="#GroupCSub1">Sub-Group 1</a></li>
-		                    <li><a href="#GroupCSub2">Sub-Group 2</a></li>
+		                    {% for post in site.posts %}
+		                    	{% if post.area == 'Robo' %}
+		                    		<li><a href="#Robo-{{ post.reflink }}">{{ post.title }}</a></li>		
+		                    	{% endif %}
+		                    {% endfor %}
 		                </ul>
 		            </li>
 		            <li>
 		                <a href="#Control">Control Systems</a>
 		                <ul class="nav nav-stacked">
-		                    <li><a href="#GroupCSub1">Sub-Group 1</a></li>
-		                    <li><a href="#GroupCSub2">Sub-Group 2</a></li>
+		                    {% for post in site.posts %}
+		                    	{% if post.area == 'Control' %}
+		                    		<li><a href="#Control-{{ post.reflink }}">{{ post.title }}</a></li>		
+		                    	{% endif %}
+		                    {% endfor %}
 		                </ul>
 		            </li>
 		        </ul>
 		    </nav>
 		    <div class="col-md-9">
-		    	<section id="ML" class="col-md-12">
-		    		<h2>Machine Learning</h2>
-		    		<hr>
+
+		    	<section id="CV" class="">
+		    		<h3  class="area-title">Computer Vision</h3>
+		    		{% for post in site.posts %}
+                    	{% if post.area == 'CV' %}
+                    		<div id="CV-{{ post.reflink }}" class="">
+	                    		<h3>{{ post.title }}</h3>
+	                    		<p>{{ post.excerpt }}
+	                    		<a class="btn btn-default" href="{{ post.url }}">Read More</a>
+	                    		</p>
+                    		</div>
+                    	{%endif%}
+                    {% endfor %}
+		    	</section>
+
+		    	<section id="NLP" class=" ">
+		    		<h3  class="area-title">Natural Language Processing</h3>
+		    		{% for post in site.posts %}
+                    	{% if post.area == 'NLP' %}
+                    		<div id="NLP-{{ post.reflink }}" class="">
+	                    		<h3>{{ post.title }}</h3>
+	                    		<p>{{ post.excerpt }}
+	                    		<a class="btn btn-default" href="{{ post.url }}">Read More</a>
+	                    		</p>
+                    		</div>
+                    	{%endif%}
+                    {% endfor %}
+		    	</section>
+
+		    	<section id="ML" class=" ">
+		    		<h3  class="area-title">Machine Learning</h3>
 		    		{% for post in site.posts %}
                     	{% if post.area == 'ML' %}
-                    		<h3>{{ post.title }}</h3>
-                    		<p>{{ post.excerpt }}</p>
-                    		<a class="btn btn-default" href="{{ post.url }}">Read More</a>
+                    		<div id="ML-{{ post.reflink }}" class="">
+	                    		<h3>{{ post.title }}</h3>
+	                    		<p>{{ post.excerpt }}
+	                    		<a class="btn btn-default" href="{{ post.url }}">Read More</a>
+	                    		</p>
+                    		</div>
+                    	{%endif%}
+                    {% endfor %}
+		    	</section>
+
+		    	<section id="Finance" class=" ">
+		    		<h3  class="area-title">Finance-Economics</h3>
+		    		{% for post in site.posts %}
+                    	{% if post.area == 'Finance' %}
+                    		<div id="Finance-{{ post.reflink }}" class="">
+	                    		<h3>{{ post.title }}</h3>
+	                    		<p>{{ post.excerpt }}
+	                    		<a class="btn btn-default" href="{{ post.url }}">Read More</a>
+	                    		</p>
+                    		</div>
+                    	{%endif%}
+                    {% endfor %}
+		    	</section>
+
+		    	<section id="Robo" class=" ">
+		    		<h3  class="area-title">Robotics</h3>
+		    		{% for post in site.posts %}
+                    	{% if post.area == 'Robo' %}
+                    		<div id="Robo-{{ post.reflink }}" class="">
+	                    		<h3>{{ post.title }}</h3>
+	                    		<p>{{ post.excerpt }}
+	                    		<a class="btn btn-default" href="{{ post.url }}">Read More</a>
+	                    		</p>
+                    		</div>
+                    	{%endif%}
+                    {% endfor %}
+		    	</section>
+
+		    	<section id="Control" class=" ">
+		    		<h3 class="area-title">Control Systems</h3>
+		    		{% for post in site.posts %}
+                    	{% if post.area == 'Control' %}
+                    		<div id="Control-{{ post.reflink }}" class="">
+	                    		<h3>{{ post.title }}</h3>
+	                    		<p>{{ post.excerpt }}
+	                    		<a class="btn btn-default" href="{{ post.url }}">Read More</a>
+	                    		</p>
+                    		</div>
                     	{%endif%}
                     {% endfor %}
 		    	</section>
@@ -79,7 +171,7 @@ layout: base
 			    </div>
 			    <div class="col-md-7">
 			        <h3>Project One</h3>
-			        <h4>Subheading</h4>
+			        <h4>heading</h4>
 			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
 			        <a class="btn btn-primary" href="portfolio-item.html">View Project</i></a>
 			    </div>
@@ -92,6 +184,6 @@ layout: base
 
     
         
-
+    <br>
     </div>
     <!-- /.container -->

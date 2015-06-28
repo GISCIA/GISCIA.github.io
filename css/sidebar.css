@@ -1,12 +1,10 @@
 .group {
-    background: yellow;
-    width: 200px;
-    height: 500px;
+    width: inherit;
+    height: inherit;
 }
 .group .subgroup {
-    background: orange;
-    width: 150px;
-    height: 200px;
+    width: inherit;
+    height: inherit;
 }
 .fixed {
     position: fixed;
@@ -21,7 +19,7 @@
 
 /* all links */
 .bs-docs-sidebar .nav>li>a {
-    color: #999;
+    color: #777;
     border-left: 2px solid transparent;
     padding: 4px 20px;
     font-size: 13px;
@@ -40,10 +38,10 @@
 .bs-docs-sidebar .nav>.active>a, 
 .bs-docs-sidebar .nav>li>a:hover, 
 .bs-docs-sidebar .nav>li>a:focus {
-    color: #563d7c;                 
+    color: #E58836;                 
     text-decoration: none;          
     background-color: transparent;  
-    border-left-color: #563d7c; 
+    border-left-color: #E58836; 
 }
 /* all active links */
 .bs-docs-sidebar .nav>.active>a, 

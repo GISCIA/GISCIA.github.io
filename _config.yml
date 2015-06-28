@@ -1,20 +1,10 @@
+permalink: pretty
+paginate: 5
+paginate_path: "/blog/page:num/"
 highlighter: pygments
 categories: [project, post]
 excerpt_separator: <!--more-->
-defaults:
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "base"
-      author: "GISCIA"
-  -
-    scope:
-      path: "blog"
-      type: "posts"
-    values:
-      layout: "base"
+
 exclude:
 - config.rb
 - Gemfile

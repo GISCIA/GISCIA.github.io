@@ -12,7 +12,7 @@ body {
 }
 
 body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    //padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
 .img-portfolio {
@@ -133,7 +133,7 @@ footer {
 	margin-bottom: 30px;
 }
 .position{
-    color:rgb(255,48,0);
+    color:#2980B9;
 }
 
 .row{
@@ -145,5 +145,5 @@ footer {
     color: black;
 }
 .current-org a:hover{
-    color: dodgerblue;
+    color: #EA6E00;
 }
