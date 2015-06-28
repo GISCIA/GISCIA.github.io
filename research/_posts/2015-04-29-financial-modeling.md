@@ -2,7 +2,7 @@
 title: Desarrollo de un modelo financiero basado en algoritmos de Inteligencia Artificial capaz de evaluar el rendimiento de empresas usando ratios financieros
 reflink: financial-modeling
 layout: post
-area: ML,Finance
+area: Finance
 categories: [project]
 ---
 
