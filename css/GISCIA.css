@@ -51,3 +51,19 @@ a:hover{
 	border-bottom: 1px solid #eee;
 	padding-bottom: 5px;
 }
+
+.navbar-nav>li {
+  font-weight: 600;
+}
+
+body{
+	font-family: "Open Sans";
+	font-color: #444;
+}
+.fixed{
+	width: 15%;
+}
+
+.research_project>h3{
+	font-size: 20px;
+}
