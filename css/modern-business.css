@@ -147,3 +147,19 @@ footer {
 .current-org a:hover{
     color: #EA6E00;
 }
+
+
+.scrollable{
+    height: 200px;
+    overflow-y: auto;
+}
+
+.scrollable li{
+    padding: 10px 0;
+}
+.panel-heading h4{
+    text-align: center;
+}
+.panel-body img{
+    width:100%;
+}
