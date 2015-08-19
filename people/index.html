@@ -18,8 +18,8 @@ title: People
         <!-- Directiva Actual -->
         <div class="row current-org">
             <div class="col-md-3 img-portfolio" style="text-align:center">
-                <div class="circular" style="background: url(/images/members/kevin.jpg) no-repeat;"></div>
-                <h3><a>Kevin S. Bello</a></h3>
+                <div class="circular" style="background: url(/images/members/kevin2.jpg) no-repeat;"></div>
+                <h3><a href="http://kevinbm.github.io/" target="blank">Kevin Bello</a></h3>
                 <p class="position">President</p>
                 <p>Machine Learning &amp; NLP</p>
                 <h6>ksbm190493@gmail.com</h6>
@@ -65,6 +65,17 @@ title: People
             <div class="col-lg-12" id="MembersTable"></div>
         </div>
 
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header" style="text-align:center">Former Members</h2>
+            </div>
+        </div>
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-lg-12" id="FormerMembersTable"></div>
+        </div>
+
         <!-- /.row -->
 
         <script>
@@ -72,8 +83,18 @@ title: People
                 {
                     loadingImage: '/images/progress_bar.gif',
                     startLine: 0,
+                    loadingText: '',
                     tableClass: 'table table-striped'
                 });
         </script>
 
+        <script>
+        $('#FormerMembersTable').CSVToTable('/people/former_people.csv',
+                {
+                    loadingImage: '/images/progress_bar.gif',
+                    loadingText: '',
+                    startLine: 0,
+                    tableClass: 'table table-striped'
+                });
+        </script>
     </div>
