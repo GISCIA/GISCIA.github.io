@@ -18,13 +18,13 @@
 
 .font-giscia{
 	font-weight: bold;
-  	font-size: 20px;
+  	font-size: 27px;
 }
 
 .container-giscia{
 	//margin-left: 50px;
 	//margin-right: 50px;
-	width: 75%;
+	width: 90%;
 	margin: auto;
 }
 
@@ -54,7 +54,9 @@ a:hover{
 
 .navbar-nav>li {
   font-weight: 600;
+  font-size: 17px;
 }
+
 
 body{
 	font-family: "Open Sans";
