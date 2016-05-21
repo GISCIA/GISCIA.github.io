@@ -1,7 +1,7 @@
 permalink: pretty
 paginate: 5
 paginate_path: "/blog/page:num/"
-highlighter: pygments
+highlighter: rouge
 categories: [project, post]
 excerpt_separator: <!--more-->
 
